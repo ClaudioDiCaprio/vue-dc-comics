@@ -18,18 +18,18 @@
                             </li>
                         </ul>
                     </div>
-                    <ul>
-                        <h3>DC</h3>
-                        <li v-for="link, i in dcLinks" :key="i">
-                            <a :href="link.url">{{link.text}}</a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <h3>SITES</h3>
-                        <li v-for="link, i in sitesLinks" :key="i">
-                            <a :href="link.url">{{link.text}}</a>
-                        </li>
-                    </ul>
+                        <ul>
+                            <h3>DC</h3>
+                            <li v-for="link, i in dcLinks" :key="i">
+                                <a :href="link.url">{{link.text}}</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <h3>SITES</h3>
+                            <li v-for="link, i in sitesLinks" :key="i">
+                                <a :href="link.url">{{link.text}}</a>
+                            </li>
+                        </ul>
                 </div>
                 <img src="../assets/img/dc-logo-bg.png" alt="">
             </div>
@@ -198,11 +198,9 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
     nav {
         background-image: url("../assets/img/footer-bg.jpg");
-        // padding: 50px 0;
         color: white;
         .container {
             width: 80%;
